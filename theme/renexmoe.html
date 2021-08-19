@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/szgotop.css" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -28,7 +31,7 @@
   }
 
   .mdui-shadow-3 {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
   }
 </style>
 <script>
@@ -46,22 +49,50 @@
   }
 
   .mdui-shadow-3 {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
   }
+  @font-face {
+            font-family: sexy;
+            src: url("https://gstatic.loli.net/s/notoserifsc/v8/H4chBXePl9DZ0Xe7gG9cyOj7oqP0dTpxZbB9E9gjjmzKvaeKHUTtJDWv3z-us4bxD8F5og.119.woff2");
+        }
+        body {
+            font-family: sexy;
+        }
+        p{font-family:"sexy";}
 </style>
 <script>
   window.disableddarkmode = true;
 </script>
 <!--BackgroundMEnd-->
+<link rel="stylesheet" type="text/css" href="css/loaders.css">
+<script>
 
+var _PageHeight = document.documentElement.clientHeight,
+    _PageWidth = document.documentElement.clientWidth;
+var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0,
+    _LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+var _LoadingHtml = '<div class="loader-inner square-spin"><div></div></div>';
+document.write(_LoadingHtml);
+document.onreadystatechange = completeLoading;    
+function completeLoading() {
+    if (document.readyState == "complete") {
+        var loadingMask = document.getElementById('loadingDiv');
+        loadingMask.parentNode.removeChild(loadingMask);
+    }
+}
+
+</script>
   </head>
   <body
     class="mdui-appbar-with-toolbar mdui-theme-layout-auto mdui-loaded mdui-theme-accent-pink"
   >
+  <div class="back-to-top cd-top faa-float animated cd-is-visible" style="top: -900px;"></div>
+	<script src="https://qncdn.wanshifu.com/wshifu-user/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/szgotop.js"></script>
     <header
   class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-appbar-scroll-toolbar-hide"
 >
-  <div class="mdui-toolbar">
+  <div class="mdui-toolbar" style="background-color: rgba(255, 255, 255, 0.7);">
   <span
     class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
     onclick='mdui.$("body").toggleClass("mdui-drawer-body-left");'
@@ -95,7 +126,7 @@
 
 </header>
 
-    <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+    <div class="mdui-drawer mdui-drawer-close" id="main-drawer" style="background-color: rgba(255, 255, 255, 0.5);">
   <div class="mdui-list" mdui-collapse="{accordion: true}">
     <!--LoginStart-->
 <li
@@ -177,7 +208,7 @@
       id="about_theme"
     >
       <i class="mdui-list-item-icon mdui-icon material-icons">info</i>
-      <div class="mdui-list-item-content">关于该主题</div>
+      <div class="mdui-list-item-content">版本v2.1.0</div>
     </li>
   </div>
 </div>
@@ -228,11 +259,11 @@
   </div>
 </div>
  <!--EncryptedStart-->
-<div class="mdui-col-md-6 mdui-col-offset-md-3">
+<div class="mdui-typo mdui-shadow-3" style="padding: 20px; margin: 20px 0">
   <br />
   <center>
     <div class="mdui-typo-title">
-      这是一个受保护的文件夹，您需要提供访问密码才能查看。
+      这是一个受保护的文件夹，您需要提供<strong><font color="#ffc0cb">访问密码</font></strong>才能查看。
     </div>
   </center>
   <form action="" method="post">
@@ -509,11 +540,37 @@
 <!--IsFileEnd-->
 
 </div>
+<script src="https://cdn.jsdelivr.net/gh/yremp/live2d@2.0/autoload.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/yremp/yremp-js@1.5/sakura.js"></script>
+<div class="footer-device" style="text-align:center;">
+		
+  <p style="font-family: 'Ubuntu', sans-serif;">
+      <span style="color: rgba(0,0,0,.4);font-size:16px">
+    <!-- 备案信息 -->
+        © 2021 lksin <a href="http://www.beian.miit.gov.cn/" target="_blank" style="color:  rgba(0,0,0,.4);;text-decoration:none">京ICP备114514号</a>
+    </p>
+    <!-- 底部图标 -->
+    <a href="https://lksin.xyz" target="_blank" alt="lksin" rel="nofollow">
+    <img src="https://cdn.jsdelivr.net/gh/PRWYQ/fantasy@1.2/icon.png" alt="lksin" style="height: 3.7em; max-height: 2.3em;padding-bottom: 0px;">
+    </a>   
+
+    <a href="https://www.jsdelivr.com/" target="_blank" alt="Free CDN" rel="nofollow">
+    <img src="https://cdn.jsdelivr.net/gh/PRWYQ/fantasy@1.1/JsDelivr.png" alt="jsDelivr" style="height: 2em; max-height: 2em;padding-bottom: 0px;">
+    </a>  
+
+    <a href="https://github.com/" target="_blank" alt="Github" rel="nofollow">
+    <img src="https://cdn.jsdelivr.net/gh/PRWYQ/fantasy@1.1/Github.png" alt="github" style="height: 2.2em; max-height: 2.5em;padding-bottom: 0px;">
+    </a>  
+
+    <a href="https://vercel.com" target="_blank" alt="vercel" rel="nofollow">
+    <img src="https://cdn.jsdelivr.net/gh/PRWYQ/fantasy@1.2/vercel-removebg-preview.png" alt="Mashiro" style="height: 2.5em; max-height: 2em;padding-bottom: 0px;">
+    </a>
+  </div>
 
   </body>
   <!--IconValuesStart-->
   { "music":"audiotrack", "video":"ondemand_video", "img":"image",
   "pdf":"picture_as_pdf", "default":"insert_drive_file"}
   <!--IconValuesEnd-->
-  <script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/app@1b381f3c.a4f2dc4618121eac37e2.js"></script><script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/app@28a13772.98a11cc0c1cf2495c3d8.js"></script><script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/app@34e3d95a.2f8dbf552095a86a7f1b.js"></script><script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/app@798ab416.9ed46bb752b71a3c13a4.js"></script><script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/app@9c50beac.30955a99f08c9574cd14.js"></script><script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/app@f0256996.956ea71aa357ba3fdc28.js"></script><script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/webpack-runtime.93708ab3e9cb84dcc01a.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/app@1b381f3c.a4f2dc4618121eac37e2.js"></script><script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/app@28a13772.98a11cc0c1cf2495c3d8.js"></script><script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/app@34e3d95a.2f8dbf552095a86a7f1b.js"></script><script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/app@798ab416.9ed46bb752b71a3c13a4.js"></script><script src="js/app@9c50beac.30955a99f08c9574cd14.js"></script><script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/app@f0256996.956ea71aa357ba3fdc28.js"></script><script src="https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3/js/webpack-runtime.93708ab3e9cb84dcc01a.js"></script>
 </html>
